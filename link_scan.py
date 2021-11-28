@@ -1,4 +1,4 @@
-"""Link scanner program to check good and bad urls."""
+"""A link scanner program for finding all links on a web page and the invalid links."""
 
 import sys
 import urllib.error
@@ -81,7 +81,7 @@ if __name__ == '__main__':
         for each_url in urls:
             print(each_url)
 
-        # Show bad urls.
+        # Show invalid urls.
         bad_urls = invalid_urls(urls)
         print('\nBad Links:')
         for bad_url in bad_urls:
